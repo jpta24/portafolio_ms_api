@@ -14,10 +14,10 @@ RUN npm install
 COPY . .
 
 # Make port 3000 available to the world outside this container
-EXPOSE 5010
+EXPOSE 5011
 
 # Run the app when the container launches
 CMD ["node", "server.js"]
 
 # docker build -t test-docker-back .
-# docker run --rm -p 5005:5010 --env-file ./.env --name portafolio-server-container test-docker-back
+# docker run --rm -p 5011:5011 --env-file ./.env --name portafolio-server-container test-docker-back
